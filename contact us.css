@@ -1,0 +1,58 @@
+/* ContactPage.css */
+
+/* Styling the main container */
+.container {
+    padding: 20px;
+}
+
+/* Styling the heading */
+h1 {
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Styling the contact information */
+h3 {
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #7f8c8d;
+}
+
+/* Styling the form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+/* Styling the submit button */
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}

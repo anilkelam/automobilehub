@@ -1,0 +1,68 @@
+<!-- <html>
+    <head>
+        <script src="jquery-3.7.1.js">
+
+        </script>
+    </head>
+    <body>
+        <p  id="p">hello</p>
+        <button>
+hello
+        </button>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+            alert("clicked");
+            })
+            $("button").click(function(){
+              document.body.style.backgroundColor='green';
+            })
+            $("button").click(function(){
+                document.body.style.backgroundColor="red"
+            })
+        })
+    </script>
+</html> -->
+
+
+<html>
+    <head>
+        <script src="jquery-3.7.1.js">
+
+        </script>
+    </head>
+    <body>
+        <p  id="p">select your color</p>
+        <button id="b1">
+blue
+        </button>
+        <button id="b2">Red</button>
+        <button id="b3">Yellow</button>
+        <button id="b4">Green</button>
+        <button id="b5">Brown</button>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+            alert("clicked");
+            })
+            
+            $("#b1").click(function(){
+                document.body.style.backgroundColor="blue"
+            })
+            $("#b2").click(function(){
+                document.body.style.backgroundColor="red";
+            })
+            $("#b3").click(function(){
+                document.body.style.backgroundColor="yellow";
+            })
+            $("#b4").click(function(){
+                document.body.style.backgroundColor="green";
+            })
+            $("#b5").click(function(){
+                document.body.style.backgroundColor="brown";
+            })
+        })
+    </script>
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LassiKars</title>
+    <!-- css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    a{
+        text-decoration:none;
+    }
+</style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- custom js -->
+    <script>
+        $(document).scroll(function () {
+            $(".navbar").toggleClass("scroll", $(this).scrollTop() > $(".navbar").height());
+        })
+    </script>
+
+    <!-- ===========================Navbar section start =========================== -->
+
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark ">
+        <a href="index123.html" class="navbar-brand"><span>l</span>assi<span>k</span>ars.com</a>
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index123.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="aboutus.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact us.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="cars.html" class="nav-link">Cars</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="ssell.html"><button class="nav-link btn">Sell</button></a></li>
+                <li class="nav-item"><a href="buynow.html"><button  class="nav-link btn">Buy</button></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===========================Navbar section end =========================== -->
+
+    <!-- ===========================Header section start ========================== -->
+    <section class="header container">
+        <div class="row">
+            <div class="col-sm-5 col-lg-5 me-5">
+                <div class="text-section">
+                    <h3 class="h3"><span>f</span>ind your Best Ride with us</h3>
+                    <p> 
+                        Welcome to LassiKars, your premier destination for buying and selling cars effortlessly. Our sleek and modern frontend page offers an extensive selection of vehicles from trusted dealerships and private sellers nationwide. Whether you're searching for your dream ride or looking to sell your current vehicle, our user-friendly platform has you covered. With advanced search filters, finding the perfect car within your budget is a breeze. And when it's time to sell, our simple listing process allows you to reach thousands of potential buyers quickly. Don't just take our word for it; our satisfied customers rave about their experience with CarTradeHub. Start your car-buying or selling journey today with CarTradeHub - your ultimate automotive marketplace where your perfect ride is just a click away.
+                    </p>
+                </div>
+                <div class="button-section">
+                    <a href="aboutus.html" class="btn">About</a>
+                    <a href="cars.html" class="btn">Cars</a>
+                </div>
+            </div>
+            <div class="col-sm-5 col-lg-3 mt-5 p-5 align-items-end">
+                <img src="img1.png" width="100px" height="200px">
+            </div>
+        </div>
+        <div class="image-overlay"></div>
+    </section>
+
+    <!-- ===========================Header section end ============================ -->
+    <br><br><br>
+
+    <!-- ===========================funny section start ============================ -->
+    <section>
+        <div class="funny">
+            <img src="driving-accelerate.gif">
+        </div>
+    </section>
+
+    <!-- ===========================funny section end ============================ -->
+
+    <br><br>
+    <!-- ===========================popular car section start ========================== -->
+    <section>
+        <div class="popular container">
+            <div class="content">
+                <h5>Popular Cars</h5>
+                <a href="">View all</a>
+            </div><br><br>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="box">
+                        <img src="img2.png" class="img-fluid" height="100px" width="200px" alt="">
+                        <br>
+                        <div class="box_content">
+                            <h6>Hyundai Creta</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="box">
+                        <img src="img3.png" class="img-fluid" height="100px" width="200px" alt="">
+                        <br><br>
+                        <div class="box_content">
+                            <h6>Honda City</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="box">
+                        <img src="img4.png" class="img-fluid" height="100px" width="200px" alt="">
+                        <br>
+                        <div class="box_content">
+                            <h6>Nissan Quashqai </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="box">
+                        <img src="img5.png" class="img-fluid" height="100px" width="200px" alt="">
+
+                        <div class="box_content">
+                            <h6>Audi Q5</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="box">
+                        <img src="car6.png" class="img-fluid" height="100px" width="200px" alt="">
+                        <br><br>
+                        <div class="box_content">
+                            <h6>Fortuner</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="box">
+                        <img src="car7.png" class="img-fluid" height="100px" width="200px" alt="">
+                        <br><br>
+                        <div class="box_content">
+                            <h6>Safari</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="box">
+                        <img src="car8.png" class="img-fluid" height="100px" width="200px" alt="">
+                        <br><br>
+                        <div class="box_content">
+                            <h6>Swift</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="box">
+                        <img src="car9.png" class="img-fluid" height="100px" width="200px" alt="">
+                        <br><br>
+                        <div class="box_content">
+                            <h6>MG Hector</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ===========================popular car section end ========================== -->
+
+
+    <!-- ===========================offer car section start ============================ -->
+    <section>
+        <div class="offer container">
+            <div class="content">
+                <h5>Top Offers</h5>
+            </div>
+            <br><br>
+            <div class="row justify-content-center">
+                <div class="col-sm-5">
+                    <div class="box">
+                        <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="car5.png" class="d-block w-100 img-fluid"  alt="...">
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <img src="car9.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="boxcontent">
+                            <h6>MG Hectors</h6>
+                            <p>
+                                Discover unbeatable deals on our Mg Hector cars, where buying and selling vehicles is made simple. Explore exclusive discounts, special financing options, and premium services tailored to enhance your car ownership experience. 
+                            </p>
+                            <button class="btn">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-sm-2 col-sm-5">
+                    <div class="box">
+                        <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="car10.png"  class="d-block w-100"  alt="...">
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <img src="car11.png"  class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="boxcontent">
+                            <h6>Renault Cars</h6>
+                            <p>
+                                Unlock exclusive deals on Renault cars for buying and selling vehicles. From discounts to premium services, our top offers ensure a seamless and rewarding car ownership experience.
+                            </p>
+                            <button class="btn">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <!-- ===========================offer car  section end ============================ -->
+
+    <br><br>
+
+     <!-- ===========================latest car  section start ============================ -->
+    <section>
+       <div class="latest_car container">
+            <div class="content">
+                <h5>Latest Car Models</h5>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car12.png" height="250px" width="300px" class="img-fluid" alt="">
+                        <div class="box_content">
+                            <h6>Honda Elavate</h6>
+                            <p>
+                              The latest car models showcase cutting-edge technology, sleek designs, and advanced safety features, catering to diverse consumer preferences and lifestyles.
+                            </p>
+                            <button class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car14.png" height="250px" width="300px" class="image-fluid" alt="">
+                        <div class="box_content">
+                            <h6>Scorpio</h6>
+                            <p>
+                                The latest Scorpio model impresses with its powerful engine, rugged design, advanced features, and exceptional off-road capabilities, setting new standards.
+                            </p>
+                            <button class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car13.png" height="250px" width="300px" class="image-fluid" alt="">
+                        <div class="box_content">
+                            <h6>Jeep Compass</h6>
+                            <p>
+                                The newest Jeep Compass model boasts innovative technology, rugged yet refined design, versatile capabilities, and a comfortable interior, ideal for adventure seekers.
+                            </p>
+                            <button class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+       </div>
+    </section>
+      <!-- ===========================latest car  section end ============================ -->
+
+
+      <!-- =========================== car  parts  section start ============================ -->
+    <section>
+        <div class="car_parts container">
+            <div id="carParts" class="carousel slide" data-ride="">
+
+                <div class="container custom_car_parts">
+                    <div class="carousel-inner">
+                        <div class="carousel-item ">
+                            <div class="box">
+                                <img src="car2.png" class="d-block w-100" alt="...">
+                                <img src="car5.png" class="d-block w-100" alt="...">
+                                <img src="car4.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item active">
+                            <div class="box">
+                                <!--  -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <h4>Get your car in 24 hrs</h4>
+                                            <p>Are you tired of waiting for weeks to get your car repaired or serviced? Look no further! With our efficient and professional service, you can get your car back in just 24 hours. Whether it's a minor repair, routine maintenance, or a comprehensive check-up, our skilled technicians use the latest tools and technology to ensure your car is in top condition in no time. We understand how essential your car is to your daily routine, which is why we prioritize fast, quality service. You can trust us to handle your vehicle with care and get you back on the road as soon as possible. Plus, our transparent pricing and friendly staff make the process smooth and hassle-free. Don't let car troubles slow you down—bring your vehicle to us and experience the difference of 24-hour turnaround!
+                                            </p><br>
+                                            <button class="btn">Buy Now</button>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="custom-box">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                                                    <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+                                                  </svg>
+                                                  <div class="svgContent">
+                                                    <h6><span>Online </span>Process</h6>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carParts" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carParts" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+        </div>
+    </section>
+
+    <!-- =========================== car  parts  section end ============================ -->
+
+
+    <!-- =========================== latest news section start============================ -->
+
+    <section>
+        <div class="container latest_news">
+            <div class="content">
+                <h5>Latest news</h5>
+
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car15.png" class="image-fluid" height="250px" width="300px" alt="">
+                        <div class="boxcontent">
+                            <h6>21-04-2024</h6>
+                            <p>
+                                Suzuki Fronx offers attractive deals on the latest models, including financing options and cashback offers for a limited time <br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car16.png" class="image-fluid" height="250px" width="300px" alt="">
+                        <div class="boxcontent">
+                            <h6>15-03-2024</h6>
+                            <p>
+                                The Tata Harrier now features exciting offers, including cash discounts, low-interest financing, and attractive exchange bonuses for a limited time! <br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car17.png" class="image-fluid" height="250px" width="300px" alt="">
+                        <div class="boxcontent">
+                            <h6>02-03-2024</h6>
+                            <p>Hyundai Verna offers cash discounts, exchange bonuses, and finance schemes for a limited time to boost sales . <br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- =========================== latest news section end ============================ -->
+
+
+
+    <!-- =========================== testimonial section start
+        ============================ -->
+    <section>
+        <div class="testimonial container">
+            <div class="content">
+                <h5>What Customers Say</h5>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="box">
+                        <p>It was my first and great experience with Lassi Kars, the process was very straight forward and smooth, i would say its just a simple 3 step process- <br> Book Inspection, Get quote and get paid instantly"</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <br><br>
+                        <h6>Vin Diesel | Paul Walker</h6>
+                        <br>
+                        <img src="per1.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-4 mid">
+                    <div class="box">
+                        <p>Very nice and athentic app Lassi Kars. Very nice app and sab batatey hai kisi ki car ke baare mein knowledge ley lo and  <br>finance service easily avalable hai</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <br><br>
+                        <h6>Ryan Gosling</h6>
+                        <br>
+                        <img src="per2.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <p>If you are a first buyer and you have no idea regarding cars , you have Lassi Kars. <br>Best app with various useful features.</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <br><br>
+                        <h6>Matt Damon | Christian Bale</h6>
+                        <br>
+                        <img src="per3.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================== testimonial section end ============================ -->
+
+     
+    <!-- ===========================footer section start ============================ -->
+    <footer>
+        <a href="">@anil</a>
+    </footer>
+    <!-- ===========================footer section end ============================ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Script for Bootstrao CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom Script-->
+    <script>
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+
+background-image:url("https://img.freepik.com/free-photo/dark-style-sky-nighttime_23-2151103593.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1714262400&semt=ais");
+background-size:100% 100%;
+
+
+        }
+        #bgg{
+              background-color:rgba(233,244,234,0.2);
+              backdrop-filter:blur(4px);
+
+
+
+
+        }
+        #lo{
+
+
+           
+            width:40%;
+            height:40%;
+           margin-left:33%;
+           background-color:rgba(233,243,234,0.2);
+           backdrop-filter:blur(8px);
+          display:none;
+           padding:20px;
+           border-radius:10px;
+
+        }
+        #bt{
+margin-left:39%;
+padding-left:8px;
+padding-right:8px;
+border:0px;
+padding-bottom:6px;
+border-radius:6px;
+background-color:rgba(255,110,0,0.9);
+color:rgba(234,254,244,0.9);
+transition: 0.4s;
+
+
+
+
+        }
+        #bt:hover{
+
+background-color:rgba(234,254,244,0.9);
+color:rgba(255,110,0,0.9);;
+
+        }
+        #sign{
+                 border-radius:4px;
+                  width:40%;
+                  height:61%;
+                  margin-left:31%;
+                  background-color: rgba(223,244,234,0.1);
+                  backdrop-filter:blur(9px);
+                  padding:30px;
+                  display:none;
+
+
+
+
+        }
+       #signup{
+margin-left:38%;
+margin-top:6px;
+border:0px;
+padding-bottom:6px;
+border-radius:6px;
+background-color:rgba(255,110,0,0.9);
+color:rgba(234,254,244,0.9);
+transition: 0.4s;
+margin-bottom:3px;
+
+
+       }
+       .o{
+        text-align:center;
+        margin-top:3px;
+        background-color:red;
+        width:50%;
+        margin-left:25%;
+        border-radius:30px;
+        color:white;
+        display:none;
+       }
+        #signup:hover{
+
+background-color:rgba(234,254,244,0.9);
+color:rgba(255,110,0,0.9);;
+
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div class="o">
+        <p>Enter valid details</p>
+    </div>
+    <div class="container-fluid ">
+<div class="row justify-content-end mt-3" >
+<div class="col-1  me-2">
+   <button class="btn btn-outline-info " id="lobtn">login<img src="loginbu.svg" class="ms-1"></button>
+</div>
+<div class="col-2 col-lg-2" id="bbg ">
+    <button class="btn btn-outline-secondary " id="sibtn">Sign Up</button>
+</div>
+
+</div>
+
+    </div>
+<div id="lo">
+    <form id="form1" action="/login" method="post">
+<div class="form-floating">
+<input type="text" class="form-control "  placeholder="UserName or Email" name="fname" >
+<label for="name">UserName</label>
+
+</div>
+<div class="form-floating">
+<input type="password" class="form-control mt-2" name="password" placeholder="Enter Password">
+<label for="pass">Enter Password</label>
+<br>
+</div>
+<button id="bt">Login</button>
+</form>
+</div>
+<div id="sign" >
+    <form id="form2" action="/signup" method="post" onsubmit="return validate()">
+<div class="form-floating">
+<input type="text" class="form-control" placeholder="Enter UserName" name="fname" id="fname">
+<label for="fname">Enter UserName</label>
+
+</div>
+<div class="form-floating mt-2">
+<input type="email" class="form-control"  placeholder="Email" name="email" id="email">
+<label for="em">Email</label>
+
+</div>
+<div class="form-floating mt-2">
+<input type="password" class="form-control"  placeholder="Set Password" name="password" id="password">
+<label for="password">Set Password</label>
+
+</div>
+<div class="form-floating mt-2">
+<input type="password" class="form-control"  placeholder="ConfirmPassword" id="cpassword">
+<label for="cpassword">Confirm Password</label>
+
+</div>
+<button id="signup">Sign Up</button>
+
+</form>
+</div>
+
+
+
+</body>
+<script> 
+    var know=0;
+    var know1=0;
+    var time=0;
+    $(document).ready(function(){
+  $("#lobtn").click(function(){
+         if($("#sign").css("display")=="none"){
+            if($("#lo").css("display")=="none"){
+                $("#lo").show(1000);
+            }
+            else{
+                $("#lo").hide(1000);
+            }
+         }
+         else{
+            $("#sign").hide(1000);
+             if($("#sign").css("display")=="none"){
+        $("#sign").show(1000);
+      }
+      else{
+           $("#sign").hide(1000);
+
+      }
+         }
+        
+         
+
+  })
+$("#sibtn").click(function(){
+if($("#lo").css("display")=="none"){
+      if($("#sign").css("display")=="none"){
+        $("#sign").show(1000);
+      }
+      else{
+           $("#sign").hide(1000);
+
+      }
+}
+
+else{
+    $("#lo").hide(1000);
+       if($("#sign").css("display")=="none"){
+        $("#sign").show(1000);
+      }
+      else{
+           $("#sign").hide(1000);
+
+      }     
+}
+})
+$(".o").fadeToggle(1000);
+function aaa(){
+    time++;
+}
+setInterval(aaa,1000);
+
+function check(){
+    if(time==2){
+        $(".o").fadeToggle(1000);
+    }
+}
+setInterval(check,1000);
+
+});
+function validate(){
+    var name=document.getElementById("fname").value;
+    var email=document.getElementById("emial").value;
+    var pass=document.getElementById("password").value;
+    var cpass=document.getElementById("cpassword").value;
+    if(name=="" || email =="" || pass=="" || cpass==""){
+        alert("Provide details");
+        return false;
+    }
+    else if(cpass!=pass){
+        alert("Password and confirm password must be same");
+        return false;
+
+    }
+    return true;
+    
+    
+    }
+   // alert('enter valid details');
+</script>
+</html>

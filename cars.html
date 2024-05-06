@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LassiKars</title>
+    <!-- CSS CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="about_us_page" style="overflow-y: scroll;">
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        $(document).scroll(function () {
+            $(".navbar").toggleClass("scroll", $(this).scrollTop() > $(".navbar").height());
+        });
+    </script>
+
+    <!-- Navbar section start -->
+   
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark ">
+        <a href="index123.html" class="navbar-brand"><span>l</span>assi<span>k</span>ars.com</a>
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index123.html" class="nav-link ">Home</a></li>
+                <li class="nav-item"><a href="aboutus.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact us.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="cars.html" class="nav-link active">Cars</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="ssell.html"><button class="nav-link btn">Sell</button></a></li>
+                <li class="nav-item"><a href="buynow.html"><button  class="nav-link btn">Buy</button></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navbar section end -->
+
+    <!-- Main section start -->
+    <section>
+        <div class="container car_main_section">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="carheader.png" class="img-fluid" alt="Car 1">
+                        <div class="box_content">
+                            <h6>CAR</h6>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><br><br>
+                            <p>Reliable, fuel-efficient compact with comfortable ride and practical features. Excellent resale value.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car2.png" class="img-fluid" alt="Car 2">
+                        <div class="box_content">
+                            <h6>CAR</h6>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><br><br>
+                            <p>Stylish design, efficient engine, great handling. Spacious interior, tech-forward features.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car3.png" class="img-fluid" alt="Car 3">
+                        <div class="box_content">
+                            <h6>CAR</h6>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><br><br>
+                            <p>Powerful and versatile, with impressive towing capabilities. Comfortable cabin and advanced safety features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car4.png" class="img-fluid" alt="Car 4">
+                        <div class="box_content">
+                            <h6>CAR</h6>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><br><br>
+                            <p>High-tech car with impressive range and acceleration. Sleek design and cutting-edge features.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car5.png" class="img-fluid" alt="Car 5">
+                        <div class="box_content">
+                            <h6>CAR</h6>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><br><br>
+                            <p>Rugged and versatile, ideal for outdoor adventures. Spacious interior and standard all-wheel drive.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car6.png" class="img-fluid" alt="Car 6">
+                        <div class="box_content">
+                            <h6>CAR</h6>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><br><br>
+                            <p>Luxurious, sporty sedan with precise handling. High-quality interior and advanced technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car7.png" class="img-fluid" alt="Car 7">
+                        <div class="box_content">
+                            <h6>CAR</h6>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><br><br>
+                            <p>Eco-friendly car with low emissions and good fuel efficiency. Compact design and comfortable ride.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car8.png" class="img-fluid" alt="Car 8">
+                        <div class="box_content">
+                            <h6>CAR</h6>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><br><br>
+                            <p>Performance-oriented car with powerful engine and precise handling. Sleek design and advanced technology.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <img src="car9.png" class="img-fluid" alt="Car 9">
+                        <div class="box_content">
+                            <h6>CAR</h6>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><br><br>
+                            <p>Spacious SUV with comfortable seating and advanced safety features. Ideal for families.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main section end -->
+</body>
+
+</html>
+
+    <!-- cars scetion main page end -->
+    <div class="social-container">
+        <a href="https://www.facebook.com/profile.php?id=100070530984207" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/vemuluri-mohan-sai-venkat-b596a9252/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/mohan_sai_venkat/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <!-- <a href="https://www.yelp.com/biz/kasa-de-franko-fun-spanish-school-san-jose-2" class="social-icon"><i class="fa-brands fa-yelp"></i></a> -->
+        <a href="https://www.youtube.com/channel/UC_Eoo7dG2ribymGZubtVqVA" target="_blank"class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+</body>
+
+</html>
